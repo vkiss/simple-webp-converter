@@ -1,0 +1,34 @@
+{
+  "name": "simple-webp-converter",
+  "version": "1.0.0",
+  "description": "A node library for converting .png and .jps to .webp using webp-converter",
+  "license": "MIT",
+  "repository": "https://github.com/vkiss/simple-webp-converter",
+  "author": "Vinicius Kiss <contato@vkiss.com.br>",
+  "bin": "./bin/simple-webp-converter.js",
+  "main": "./lib/index.js",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpconverter",
+    "webp-converter",
+    "webp",
+    "image",
+    "convert"
+  ],
+  "bugs": {
+    "url": "https://github.com/vkiss/simple-webp-converter/issues"
+  },
+  "homepage": "https://github.com/vkiss/simple-webp-converter#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "cosmiconfig": "^7.0.1",
+    "glob": "^7.1.7",
+    "webp-converter": "^2.3.3"
+  }
+}

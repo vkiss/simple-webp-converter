@@ -1,18 +1,10 @@
 #!/usr/bin/env node
 
-/**
- * -----------------------------
- * Requires
- * -----------------------------
- */
-
 const { cosmiconfig } = require( "cosmiconfig" );
 const chalk = require( "chalk" );
 
-// Lib
 const simpleWebpConverter = require( "../lib" );
 
-// Config
 const { info } = console;
 
 /**

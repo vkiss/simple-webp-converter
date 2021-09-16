@@ -12,7 +12,8 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "husky install",
+    "precommit": "lint-staged"
   },
   "keywords": [
     "webpconverter",
@@ -30,5 +31,16 @@
     "cosmiconfig": "^7.0.1",
     "glob": "^7.1.7",
     "webp-converter": "^2.3.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix"
+    ]
   }
 }

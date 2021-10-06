@@ -1,10 +1,10 @@
 {
   "name": "simple-webp-converter",
   "version": "1.0.0",
-  "description": "A node library for converting .png and .jps to .webp using webp-converter",
+  "description": "A node library for converting .png and .jpg to .webp using webp-converter",
   "license": "MIT",
   "repository": "https://github.com/vkiss/simple-webp-converter",
-  "author": "Vinicius Kiss <contato@vkiss.com.br>",
+  "author": "Vinicius Kiss <contato@vkiss.com.br> (https://www.vkiss.com.br/)",
   "bin": "./bin/simple-webp-converter.js",
   "main": "./lib/index.js",
   "files": [

@@ -1,7 +1,7 @@
 # simple-webp-converter
 [![npm version](https://badge.fury.io/js/simple-webp-converter.svg)](https://badge.fury.io/js/simple-webp-converter)
 
-A node library for converting .png and .jps to .webp using [webp-converter](https://github.com/scionoftech/webp-converter).
+A node library for converting .png and .jpg to .webp using [webp-converter](https://github.com/scionoftech/webp-converter).
 
 ## Instalation
 

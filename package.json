@@ -29,7 +29,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "cosmiconfig": "^7.0.1",
-    "glob": "^7.1.7",
+    "glob": "^7.2.0",
     "webp-converter": "^2.3.3"
   },
   "devDependencies": {

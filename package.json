@@ -33,7 +33,7 @@
     "webp-converter": "^2.3.3"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^7.15.8",
     "eslint": "^7.32.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.0"

@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-
-const { cosmiconfig } = require( "cosmiconfig" );
-const chalk = require( "chalk" );
-
-const simpleWebpConverter = require( "../lib" );
+import { cosmiconfig } from "cosmiconfig";
+import chalk from "chalk";
+import simpleWebpConverter from "../lib/index.js";
 
 const { info } = console;
 

@@ -1,6 +1,8 @@
-## [Unreleased]
+## 1.0.1
+> **Publishing date:** 2022-04-21
 
-- Update glob to 7.2;
+- **Refac:** package.module
+- **Build:** Update dev packages
 
 ## 1.0
 > **Publishing date:** 2021-09-16

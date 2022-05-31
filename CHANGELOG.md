@@ -1,3 +1,8 @@
+## 1.0.3
+> **Publishing date:** 2022-05-31
+
+- **Fix:** Revert import from 'package.module' refac
+
 ## 1.0.2
 > **Publishing date:** 2022-05-31
 

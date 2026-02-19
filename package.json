@@ -33,10 +33,5 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.2"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix"
-    ]
   }
 }

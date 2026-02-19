@@ -1,63 +1,90 @@
 # simple-webp-converter
+
 [![npm version](https://badge.fury.io/js/simple-webp-converter.svg)](https://badge.fury.io/js/simple-webp-converter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A node library for converting .png and .jpg to .webp using [webp-converter](https://github.com/scionoftech/webp-converter).
+A simple Node.js library for converting PNG and JPG images to WebP format using [webp-converter](https://github.com/scionoftech/webp-converter).
 
-## Instalation
+## Features
+
+- Convert PNG and JPG images to WebP
+- CLI tool for easy integration into build scripts
+- Programmatic API for custom workflows
+- Configurable source patterns using glob
+
+## Installation
 
 ```bash
-npm i simple-webp-converter --save-dev
+npm install simple-webp-converter --save-dev
 ```
 
-## How
+## Usage
+
+### CLI Usage
+
+Add to your `package.json` scripts:
 
 ```json
-# package.json
-
 {
   "scripts": {
     "webp": "simple-webp-converter"
-  },
+  }
 }
 ```
+
+Run the conversion:
 
 ```bash
 npm run webp
 ```
 
-Running this will create a .webp copy on the same path as any .png or .jpg file (node_modules is excluded by default).
+This will create WebP copies of all PNG and JPG files in the project (excluding `node_modules`).
 
-## Options
+### Configuration
 
-To change config, include the `"simple-webp-converter"` property in package.json
-
-### src
-
-Changes pattern to look for imagens in repository.
-The value must be a [glob pattern](https://github.com/isaacs/node-glob#glob-primer) string
+Configure options in `package.json` under the `"simple-webp-converter"` key:
 
 ```json
-# package.json
-
 {
   "simple-webp-converter": {
-    "src": "src/**/*.{png,jpg}"
+    "src": "src/**/*.{png,jpg}",
+    "quality": 90
   }
 }
 ```
 
-Running with this configuration will create a .webp copy on the same path as the .png and .jpgs files located under /src folder
+With this config, only images under the `/src` folder will be converted with 90% quality.
 
-## How (in JS)
-```js
-const simpleWebpConverter = require( "simple-webp-converter" );
+### Programmatic Usage
 
-// to run using default glob pattern
+```javascript
+const simpleWebpConverter = require("simple-webp-converter");
+
+// Use default settings (converts **/*.{png,jpg} at quality 80)
 simpleWebpConverter();
 
-// to run using custom pattern
+// Use custom source pattern and quality
 simpleWebpConverter({
-  src: "assets/**/*.{png,jpg}"
+  src: "assets/**/*.{png,jpg}",
+  quality: 90
 });
-
 ```
+
+## Options
+
+- `src` (string): Glob pattern to match source images. Default: `"**/*.{png,jpg}"`
+- `quality` (number): WebP quality (0-100). Default: `80`
+
+## Notes
+
+- Output files are created in the same directory as the source files with `.webp` extension.
+- Quality ranges from 0 (worst) to 100 (best).
+- Requires `webp-converter` which depends on WebP tools being installed on the system.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/vkiss/simple-webp-converter).
+
+## License
+
+MIT

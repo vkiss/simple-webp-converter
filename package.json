@@ -1,6 +1,6 @@
 {
   "name": "simple-webp-converter",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A node library for converting .png and .jpg to .webp using webp-converter",
   "license": "MIT",
   "repository": "https://github.com/vkiss/simple-webp-converter",

@@ -1,10 +1,11 @@
-## 1.0.4
+## 1.1.0
 > **Publishing date:** 2026-02-19
 
 - **Build:** Update depencies
   - cosmiconfig [^7.0.1 → ^9.0.0]
   - glob [^8.0.3 → ^13.0.5]
 - **Refac:** Update glob methods to v13
+- **Refac:** Remove ESLINT and added biomejs
 
 ## 1.0.3
 > **Publishing date:** 2022-05-31

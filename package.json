@@ -1,6 +1,6 @@
 {
   "name": "simple-webp-converter",
-  "version": "1.0.4-alpha.3",
+  "version": "1.1.0",
   "description": "A node library for converting .png and .jpg to .webp using webp-converter",
   "license": "MIT",
   "repository": "https://github.com/vkiss/simple-webp-converter",
@@ -12,8 +12,7 @@
     "lib"
   ],
   "scripts": {
-    "prepare": "husky install",
-    "precommit": "lint-staged"
+    "lint": "biome check . --write"
   },
   "keywords": [
     "webpconverter",
@@ -33,10 +32,7 @@
     "webp-converter": "^2.3.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.17.0",
-    "eslint": "^8.13.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.4.0"
+    "@biomejs/biome": "^2.4.2"
   },
   "lint-staged": {
     "*.js": [

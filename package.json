@@ -1,6 +1,6 @@
 {
   "name": "simple-webp-converter",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A node library for converting .png and .jpg to .webp using webp-converter",
   "license": "MIT",
   "repository": "https://github.com/vkiss/simple-webp-converter",
@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/vkiss/simple-webp-converter#readme",
   "dependencies": {
-    "chalk": "4.1.2",
+    "chalk": "^5.6.2",
     "cosmiconfig": "^9.0.0",
-    "glob": "^13.0.5",
+    "glob": "^13.0.6",
     "webp-converter": "^2.3.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.2"
+    "@biomejs/biome": "^2.4.4"
   }
 }

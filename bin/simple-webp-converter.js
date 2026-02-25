@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 
-const { cosmiconfig } = require("cosmiconfig");
-const chalk = require("chalk");
-
 const simpleWebpConverter = require("../lib");
 
 const { info } = console;
@@ -11,7 +8,9 @@ const { info } = console;
  * ----------------------------------------------------------
  */
 
-const runScript = () => {
+const runScript = async () => {
+  const cosmiconfig = (await import("cosmiconfig")).cosmiconfig;
+  const chalk = (await import("chalk")).default;
   // Script start message
   info(chalk.gray("> simple-webp-converter.js"));
 

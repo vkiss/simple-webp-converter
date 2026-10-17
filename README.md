@@ -85,6 +85,12 @@ simpleWebpConverter({
 
 Contributions are welcome! Please open an issue or submit a pull request on [GitHub](https://github.com/vkiss/simple-webp-converter).
 
+Run the unit tests with:
+
+```bash
+npm test
+```
+
 ## License
 
 MIT
